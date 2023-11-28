@@ -1,0 +1,53 @@
+@import '.css/reset.css';
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --primary-color: #9356dc;
+    --secondary-color: #ff79da;
+    --tertiary-color: #99e2d0;
+  }
+  
+  body {
+    // background-color: var(--primary-color); 
+  }
+  
+.header {
+  display: flex;
+  flex-direction: column;
+  .header-top-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0 5px 0;
+  }
+  .header-bottom-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    ;
+    padding: 15px 0;
+  }
+}
+
+.header__location {
+  display: flex;
+  &__text {
+    //styleName: Button;
+font-size: 16px;
+font-weight: 550;
+line-height: 19px;
+letter-spacing: 0em;
+padding-left: 17px;
+  }
+}
+
+
+
+
+
