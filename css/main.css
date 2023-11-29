@@ -175,7 +175,9 @@ header {
 
 .footer {
   height: 186px;
-  padding: 22px, 25px, 22px, 25px;
+  padding: 22px 25px;
+  border: solid;
+  background-color: rgb(53, 53, 53);
 }
 
 .explore {
@@ -279,9 +281,6 @@ header {
   letter-spacing: 0em;
   text-align: left;
   margin: 54px 60px 20px 0;
-}
-.restaurants__cards {
-  height: 250px;
 }
 .restaurants__card {
   height: 250px;
