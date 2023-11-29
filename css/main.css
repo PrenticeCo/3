@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/***
+    The new CSS reset - version 1.8.5 (last updated 14.6.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+/* :where(dialog:modal) {
+  all: revert;
+} */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.header__logo {
+  padding: 14px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+  z-index: 2;
+}
+.header__logo h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  padding: 15.5px 0;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.header__location__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  padding-left: 17px;
+}
+
+.restaurant-explore {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 0 30px 0;
+  background-color: rgb(246, 246, 246);
+}
+.restaurant-explore__maintext {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 17px;
+}
+.restaurant-explore__maintext h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.restaurant-explore__secondarytext {
+  display: flex;
+  justify-content: center;
+}
+.restaurant-explore__secondarytext p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.restaurant-explore div {
+  margin-bottom: 27px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  padding: 48px 20px 68px;
+}
+.how-it-works__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.how-it-works__cards {
+  padding-bottom: -27px;
+}
+.how-it-works__cards__card {
+  height: 72.38px;
+  margin-bottom: 25px;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgb(246, 246, 246);
+}
+.how-it-works__cards__card__content {
+  display: flex;
+  align-items: center;
+}
+.how-it-works__cards__card__content__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.how-it-works__cards__card svg {
+  margin: 24px 24px 24px 33px;
+}
+
+.restaurants {
+  background-color: rgb(246, 246, 246);
+}
+.restaurants__cards {
+  height: 250px;
+}
+.restaurants__cards img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=main.css.map */
