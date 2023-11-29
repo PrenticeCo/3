@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <div class="container">
+  <div class="html__container">
     <!--HEADER-->
     <header>
       <div class="header__logo">
-        <h1>ohmyfood</h1>
+        <h1 class="header__logo__text">ohmyfood</h1>
       </div>
       <section class="header__location">
         <svg
@@ -39,23 +39,30 @@
     </header>
 
     <body>
-      <section class="restaurant-explore">
-        <div class="restaurant-explore__maintext">
-          <h1>Book the meal you want</h1>
+      <section class="explore">
+        <div class="explore__maintext__container">
+          <h1 class="explore__maintext__container__text">
+            Book the meal you want
+          </h1>
         </div>
-        <div class="restaurant-explore__secondarytext">
-          <p>Discover our carefully selected high-end restaurants</p>
+        <div class="explore__secondarytext__container">
+          <p class="explore__secondarytext__container__text">
+            Discover our carefully selected high-end restaurants
+          </p>
         </div>
-        <div class="button">
-          <button>Explore our restaurants</button>
+        <div class="button__container">
+          <button class="btn">Explore our restaurants</button>
         </div>
       </section>
 
-      <section class="how-it-works">
-        <h1 class="how-it-works__title">How it works</h1>
-        <section class="how-it-works__cards">
-          <article class="how-it-works__cards__card">
-            <div class="how-it-works__cards__card__content">
+      <section class="guide">
+        <h1 class="guide__title">How it works</h1>
+        <section class="guide__cards">
+          <article class="guide__cards__card">
+            <div class="circle__container">
+              <div class="circle">1</div>
+            </div>
+            <div class="guide__cards__card__content">
               <svg
                 width="14"
                 height="21"
@@ -68,13 +75,16 @@
                   fill="#7E7E7E"
                 />
               </svg>
-              <div class="how-it-works__cards__card__content__text">
-                <p>Choose a restaurant</p>
-              </div>
+              <p class="guide__cards__card__content__text">
+                Choose a restaurant
+              </p>
             </div>
           </article>
-          <article class="how-it-works__cards__card">
-            <div class="how-it-works__cards__card__content">
+          <article class="guide__cards__card">
+            <div class="circle__container">
+              <div class="circle">2</div>
+            </div>
+            <div class="guide__cards__card__content">
               <svg
                 width="16"
                 height="17"
@@ -87,13 +97,14 @@
                   fill="#7E7E7E"
                 />
               </svg>
-              <div class="how-it-works__cards__card__content__text">
-                <p>Choose a restaurant</p>
-              </div>
+              <p class="guide__cards__card__content__text">Build your meal</p>
             </div>
           </article>
-          <article class="how-it-works__cards__card">
-            <div class="how-it-works__cards__card__content">
+          <article class="guide__cards__card">
+            <div class="circle__container">
+              <div class="circle">3</div>
+            </div>
+            <div class="guide__cards__card__content">
               <svg
                 width="18"
                 height="19"
@@ -106,9 +117,9 @@
                   fill="#9356DC"
                 />
               </svg>
-              <div class="how-it-works__cards__card__content__text">
-                <p>Enjoy your meal at the <br />restaurant</p>
-              </div>
+              <p class="guide__cards__card__content__text">
+                Enjoy your meal at the restaurant
+              </p>
             </div>
           </article>
         </section>
@@ -116,16 +127,19 @@
 
       <main>
         <section class="restaurants">
-          <h1 class="restaurants__title"></h1>
+          <h1 class="restaurants__title">Restaurants</h1>
           <div class="restaurants__cards">
-            <article class="restaurants__card"></article>
-            <article class="restaurants__card"></article>
             <article class="restaurants__card">
               <img
+                class="restaurants__card__img"
                 src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt=""
+                alt="Kitchen West"
               />
+              <h2 class="restaurants__card__title">Kitchen West</h2>
+              <p class="restaurants__card__subtitle">Angel</p>
             </article>
+            <article class="restaurants__card"></article>
+            <article class="restaurants__card"></article>
             <article class="restaurants__card"></article>
           </div>
         </section>

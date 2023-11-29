@@ -1,0 +1,130 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 0 30px 0;
+
+  &__maintext__container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 17px;
+
+    &__text {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  &__secondarytext__container {
+    display: flex;
+    justify-content: center;
+    &__text {
+      font-size: 18px;
+      font-weight: 100;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  div {
+    margin-bottom: 27px;
+  }
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  background-color: white;
+  // border: solid;
+  padding: 48px 20px 68px 35px;
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+}
+
+.guide__cards {
+  padding-bottom: -27px;
+
+  &__card {
+    height: 72.38px;
+    margin-bottom: 25px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    background-color: $background-color;
+
+    &__content {
+      display: flex;
+      align-items: center;
+
+      &__text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    svg {
+      margin: 24px 24px 24px 33px;
+    }
+  }
+}
+
+.circle {
+  margin-left: -15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: rgba(147, 86, 220, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// RESTAURANTS
+
+.restaurants {
+  padding: 0 20px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 54px 60px 20px 0;
+  }
+
+  &__cards {
+    height: 250px;
+  }
+
+  &__card {
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 18px;
+    background-color: white;
+
+    &__img {
+      height: 70%;
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+    }
+  }
+}

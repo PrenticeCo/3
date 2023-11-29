@@ -1,13 +1,5 @@
-* {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-$background-color: rgba(246, 246, 246, 1);
-
-body {
-  // background-color: var(--primary-color);
+header {
+  background-color: white;
 }
 
 .header__logo {
@@ -18,7 +10,8 @@ body {
   box-shadow: 0px 2px 4px 0px #00000026;
   position: relative;
   z-index: 2;
-  h1 {
+
+  .header__logo__text {
     font-family: Shrikhand;
     font-size: 30px;
     font-weight: 400;
@@ -37,117 +30,12 @@ body {
   display: flex;
   position: relative;
   z-index: 1;
+
   &__text {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
     padding-left: 17px;
-  }
-}
-
-.restaurant-explore {
-  display: flex;
-  flex-direction: column;
-  padding: 39px 0 30px 0;
-  background-color: $background-color;
-  &__maintext {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 17px;
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 28px;
-      letter-spacing: 0em;
-      text-align: center;
-    }
-  }
-  &__secondarytext {
-    display: flex;
-    justify-content: center;
-    p {
-      font-size: 18px;
-      font-weight: 100;
-      line-height: 21px;
-      letter-spacing: 0em;
-      text-align: center;
-    }
-  }
-  div {
-    margin-bottom: 27px;
-  }
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-}
-
-button {
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-.how-it-works {
-  display: flex;
-  flex-direction: column;
-  height: 440px;
-  // border: solid;
-  padding: 48px 20px 68px;
-  &__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 26px;
-  }
-}
-
-.how-it-works__cards {
-  padding-bottom: -27px;
-
-  &__card {
-    height: 72.38px;
-    margin-bottom: 25px;
-    display: flex;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    background-color: $background-color;
-
-    &__content {
-      display: flex;
-      align-items: center;
-
-      &__text {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-      }
-    }
-    svg {
-      margin: 24px 24px 24px 33px;
-    }
-  }
-}
-
-.restaurants {
-  background-color: $background-color;
-  &__cards {
-    height: 250px;
-
-    img {
-      object-fit: contain;
-    }
   }
 }
