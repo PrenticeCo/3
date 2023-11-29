@@ -173,6 +173,11 @@ header {
   padding-left: 17px;
 }
 
+.footer {
+  height: 186px;
+  padding: 22px, 25px, 22px, 25px;
+}
+
 .explore {
   display: flex;
   flex-direction: column;
@@ -283,6 +288,25 @@ header {
   border-radius: 15px 15px 0 0;
   margin-bottom: 18px;
   background-color: white;
+}
+.restaurants__card__content {
+  padding: 16px 60px 12px 13px;
+  margin-top: -5px;
+}
+.restaurants__card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.restaurants__card__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .restaurants__card__img {
   height: 70%;
