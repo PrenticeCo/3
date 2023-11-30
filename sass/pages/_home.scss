@@ -113,13 +113,17 @@
 
   &__card {
     height: 250px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     margin-bottom: 18px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 
     &__content {
-      padding: 16px 60px 12px 13px;
-      margin-top: -5px;
+      padding: 16px 60px 0 13px;
+      display: flex;
+      justify-content: space-between;
+      // border: solid;
     }
 
     &__title {
@@ -146,4 +150,8 @@
       object-fit: cover;
     }
   }
+}
+
+.restaurants__heart {
+  margin: 5px -30px 15px 15px;
 }
