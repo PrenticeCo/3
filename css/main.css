@@ -131,13 +131,13 @@ body {
   color: white;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
-header {
+.main__header {
   background-color: white;
 }
-
-.header__logo {
+.main__header__logo {
   padding: 14px 0 5px 0;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ header {
   position: relative;
   z-index: 2;
 }
-.header__logo .header__logo__text {
+.main__header__logo__text {
   font-family: Shrikhand;
   font-size: 30px;
   font-weight: 400;
@@ -154,8 +154,7 @@ header {
   letter-spacing: 0em;
   text-align: center;
 }
-
-.header__location {
+.main__header__location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,12 +164,39 @@ header {
   position: relative;
   z-index: 1;
 }
-.header__location__text {
+.main__header__location__text {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
   padding-left: 17px;
+}
+
+.menu__header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu__header__arrow {
+  display: flex;
+  position: absolute;
+  margin: 5px 0 0 28px;
+}
+.menu__header__logo {
+  flex-grow: 1; /* Allow the logo to grow and take available space */
+  text-align: center; /* Center the text inside the logo container */
+  padding: 14px 0 5px 0;
+}
+.menu__header__logo__text {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .footer {
@@ -182,6 +208,7 @@ header {
 }
 .footer svg {
   margin-right: 11px;
+  margin-bottom: 7px;
 }
 .footer__title {
   font-family: Shrikhand;
@@ -368,4 +395,54 @@ header {
   top: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.menu__background__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.menu__body {
+  background-color: rgb(246, 246, 246);
+  height: 1020px;
+  border-radius: 40px 40px 0 0;
+  padding: 0 13px;
+  margin-top: -48px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.menu__body__title {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 34px 17px 40px 4px;
+}
+.menu__body__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menu__body__subtitle__container {
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 40px;
+}
+.menu__body__cards > :last-child {
+  margin-bottom: 10.5px;
+}
+.menu__body__cards__card {
+  height: 69px;
+  border-radius: 15px;
+  margin-top: 10.5px;
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */

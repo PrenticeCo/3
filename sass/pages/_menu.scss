@@ -1,0 +1,55 @@
+.menu__background__img {
+  //   height: 275px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.menu__body {
+  background-color: $background-color;
+  height: 1020px;
+  border-radius: 40px 40px 0 0;
+  padding: 0 13px;
+  margin-top: -48px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 34px 17px 40px 4px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &__container {
+      border-bottom: 3px solid rgba(153, 226, 208, 1);
+      width: 40px;
+    }
+  }
+
+  &__cards {
+    > :last-child {
+      margin-bottom: 10.5px;
+    }
+    &__card {
+      height: 69px;
+      border-radius: 15px;
+      margin-top: 10.5px;
+      background-color: white;
+    }
+  }
+}
