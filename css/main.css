@@ -206,6 +206,16 @@ header {
   margin-bottom: 7px;
 }
 
+.restaurants__heart--hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.restaurants__heart:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
 .explore {
   display: flex;
   flex-direction: column;
@@ -320,6 +330,7 @@ header {
   padding: 16px 60px 0 13px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .restaurants__card__title {
   font-size: 18px;
@@ -345,5 +356,16 @@ header {
 }
 
 .restaurants__heart {
-  margin: 5px -30px 15px 15px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.restaurants__heart--hover {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

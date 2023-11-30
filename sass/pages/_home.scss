@@ -123,6 +123,7 @@
       padding: 16px 60px 0 13px;
       display: flex;
       justify-content: space-between;
+      position: relative;
       // border: solid;
     }
 
@@ -153,5 +154,16 @@
 }
 
 .restaurants__heart {
-  margin: 5px -30px 15px 15px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  &--hover {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 }
