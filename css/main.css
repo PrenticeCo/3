@@ -117,7 +117,7 @@ meter {
   justify-content: center;
 }
 
-.btn {
+.main__btn {
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -128,6 +128,7 @@ meter {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .menu__btn {
@@ -261,6 +262,14 @@ meter {
   cursor: pointer;
 }
 
+.restaurants__card:hover {
+  transform: scale(1.02);
+}
+
+.main__btn:hover {
+  transform: scale(1.05);
+}
+
 .main__body {
   background-color: rgb(246, 246, 246);
 }
@@ -356,9 +365,10 @@ meter {
   align-items: center;
 }
 
-.restaurants {
+#restaurants {
   padding: 0 20px;
 }
+
 .restaurants__title {
   font-size: 24px;
   font-weight: 700;
@@ -378,6 +388,7 @@ meter {
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: transform 0.3s;
 }
 .restaurants__card__content {
   padding: 16px 60px 0 13px;
