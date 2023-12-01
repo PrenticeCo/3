@@ -11,7 +11,31 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: $btn-color;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.menu__btn {
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: $btn-color;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu__btn__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }

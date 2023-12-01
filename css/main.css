@@ -112,10 +112,6 @@ meter {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: rgb(246, 246, 246);
-}
-
 .button__container {
   display: flex;
   justify-content: center;
@@ -132,6 +128,30 @@ body {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.menu__btn {
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu__btn__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .main__header {
@@ -200,9 +220,7 @@ body {
 }
 
 .footer {
-  height: 186px;
   padding: 22px 25px;
-  margin-top: 66px;
   border: solid;
   background-color: rgb(53, 53, 53);
 }
@@ -241,6 +259,10 @@ body {
 .restaurants__heart:hover {
   opacity: 0;
   cursor: pointer;
+}
+
+.main__body {
+  background-color: rgb(246, 246, 246);
 }
 
 .explore {
@@ -345,6 +367,9 @@ body {
   text-align: left;
   margin: 54px 60px 20px 0;
 }
+.restaurants__cards {
+  margin-bottom: 66px;
+}
 .restaurants__card {
   height: 250px;
   border-radius: 15px;
@@ -407,7 +432,6 @@ body {
 
 .menu__body {
   background-color: rgb(246, 246, 246);
-  height: 1020px;
   border-radius: 40px 40px 0 0;
   padding: 0 13px;
   margin-top: -48px;
@@ -438,11 +462,41 @@ body {
   width: 40px;
 }
 .menu__body__cards > :last-child {
-  margin-bottom: 10.5px;
+  margin-bottom: 40px;
 }
 .menu__body__cards__card {
   height: 69px;
   border-radius: 15px;
   margin-top: 10.5px;
   background-color: white;
+}
+.menu__body__cards__card__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 12px 0 5px 15px;
+}
+.menu__body__cards__card__content {
+  display: flex;
+}
+.menu__body__cards__card__content__text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0 0 12px 15px;
+  width: 80%;
+}
+.menu__body__cards__card__content__price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

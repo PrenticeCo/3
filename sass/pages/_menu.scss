@@ -8,7 +8,7 @@
 
 .menu__body {
   background-color: $background-color;
-  height: 1020px;
+  //   height: 1020px;
   border-radius: 40px 40px 0 0;
   padding: 0 13px;
   margin-top: -48px;
@@ -43,13 +43,48 @@
 
   &__cards {
     > :last-child {
-      margin-bottom: 10.5px;
+      margin-bottom: 40px;
     }
+
     &__card {
       height: 69px;
       border-radius: 15px;
       margin-top: 10.5px;
       background-color: white;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 12px 0 5px 15px;
+      }
+
+      &__content {
+        display: flex;
+
+        &__text {
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 0 0 12px 15px;
+          width: 80%;
+        }
+
+        &__price {
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-grow: 1;
+        }
+      }
     }
   }
 }
