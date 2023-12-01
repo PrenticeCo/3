@@ -377,6 +377,7 @@ meter {
   background-color: white;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .restaurants__card__content {
   padding: 16px 60px 0 13px;
@@ -407,19 +408,37 @@ meter {
      object-fit: cover;
 }
 
+.restaurants__card__new__container {
+  position: absolute;
+  width: 80px;
+  right: 15px;
+  top: 15px;
+  padding: 7px 9px;
+  border-radius: 2px;
+  background-color: rgb(153, 226, 208);
+}
+.restaurants__card__new__container__text {
+  color: rgb(0, 135, 102);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .restaurants__heart {
   position: absolute;
   right: 30px;
   top: 20px;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: 0.3s;
 }
 .restaurants__heart--hover {
   position: absolute;
   right: 30px;
   top: 20px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: 0.3s;
 }
 
 .menu__background__img {
