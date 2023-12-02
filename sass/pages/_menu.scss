@@ -36,7 +36,7 @@
     text-align: left;
 
     &__container {
-      border-bottom: 3px solid rgba(153, 226, 208, 1);
+      border-bottom: 3px solid $tertiary-color;
       width: 40px;
     }
   }
@@ -86,5 +86,31 @@
         }
       }
     }
+  }
+}
+
+.menu__container {
+  &__starters > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 0.5s ease forwards;
+    margin-bottom: 20px;
+    animation-delay: 1s;
+  }
+
+  &__mains > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 0.5s ease forwards;
+    margin-bottom: 20px;
+    animation-delay: 2s;
+  }
+
+  &__desserts > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 0.5s ease forwards;
+    margin-bottom: 20px;
+    animation-delay: 3s;
   }
 }
