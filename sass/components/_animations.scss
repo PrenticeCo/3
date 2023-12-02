@@ -14,5 +14,22 @@
 }
 
 .main__btn:hover {
-  transform: scale(1.05);
+  background: $btn-color--hvr;
+  box-shadow: 0px 4px 15px 0px #00000059;
+}
+
+.menu__btn:hover {
+  background: $btn-color--hvr;
+  box-shadow: 0px 4px 15px 0px #00000059;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
