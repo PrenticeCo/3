@@ -13,6 +13,23 @@
   // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.menu__body__cards__card:hover {
+  cursor: pointer;
+
+  .menu__body__cards__card__selector {
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear__tick 0.5s;
+
+    &__tick {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
 .main__btn:hover {
   background: $btn-color--hvr;
   box-shadow: 0px 4px 15px 0px #00000059;
@@ -31,5 +48,16 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes appear__tick {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
