@@ -38,10 +38,13 @@
 }
 
 .guide {
-  display: flex;
-  flex-direction: column;
   background-color: white;
-  padding: 0 20px 0 35px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 35px;
+  }
   &__title {
     font-size: 24px;
     font-weight: 700;
@@ -55,6 +58,7 @@
 
 .guide__cards {
   margin-bottom: 50px;
+
   &__card {
     padding-right: 24px;
     height: 72.38px;

@@ -1,15 +1,22 @@
 @media screen and (min-width: 1025px) {
   .guide {
-    padding-bottom: 0;
+    &__container {
+      max-width: 1440px;
+      margin: auto;
+    }
     &__cards {
       display: flex;
       flex-flow: wrap;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 50px;
 
       &__card {
-        flex: 0 0 30%;
+        flex: 0 0 31%;
       }
     }
   }
+}
+
+#restaurants {
 }

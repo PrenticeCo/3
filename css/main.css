@@ -107,17 +107,19 @@ meter {
   all: revert;
 } */
 @media screen and (min-width: 1025px) {
-  .guide {
-    padding-bottom: 0;
+  .guide__container {
+    max-width: 1440px;
+    margin: auto;
   }
   .guide__cards {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
   }
   .guide__cards__card {
-    flex: 0 0 30%;
+    flex: 0 0 31%;
   }
 }
 * {
@@ -379,9 +381,11 @@ meter {
 }
 
 .guide {
+  background-color: white;
+}
+.guide__container {
   display: flex;
   flex-direction: column;
-  background-color: white;
   padding: 0 20px 0 35px;
 }
 .guide__title {
