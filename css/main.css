@@ -107,8 +107,8 @@ meter {
   all: revert;
 } */
 .loader {
-  border: 16px solid #ff79da; /* Light grey */
-  border-top: 16px solid #9356dc; /* Blue */
+  border: 16px solid #ff79da;
+  border-top: 16px solid #9356dc;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -712,9 +712,21 @@ meter {
   }
   .footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
+    height: 144px;
+  }
+  .footer__title {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 8px;
+  }
+  .footer__subtitles {
+    display: flex;
+    align-content: end;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1025px) {
