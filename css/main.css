@@ -106,80 +106,29 @@ meter {
 /* :where(dialog:modal) {
   all: revert;
 } */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .guide__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .guide__cards {
-    margin: auto;
-  }
-  .guide__cards__card {
-    width: 708px;
-    margin: auto;
-  }
-  .restaurants__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0 20px 0 !important;
-  }
-  .restaurants__card__anchor {
-    width: 708px !important;
-    margin: auto;
-  }
+.loader {
+  border: 16px solid #ff79da; /* Light grey */
+  border-top: 16px solid #9356dc; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
-@media screen and (min-width: 1025px) {
-  .guide__container {
-    max-width: 1440px;
-    margin: auto;
-  }
-  .guide__title {
-    margin-left: 30px;
-  }
-  .guide__cards {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 0 30px 0 30px;
-  }
-  .guide__cards__card {
-    flex: 0 0 31%;
-  }
-  .explore {
-    display: flex;
-    flex-direction: column;
-  }
-  .explore__maintext__container {
-    margin-top: -15px;
-  }
-  .explore > div {
-    transition: 0.3s;
-  }
-  .main__btn__anchor {
-    margin-bottom: -30px;
-  }
-  #restaurants {
-    max-width: 1440px;
-    display: flex;
-    flex-flow: wrap;
-    margin: auto;
-  }
-  .restaurants__title {
-    margin: 30px 60px 30px 40px !important;
-  }
-  .restaurants__cards {
-    width: 100%;
-    gap: 50px !important;
-  }
-  .restaurants__card__anchor {
-    flex: 0 0 45%;
-    margin: auto;
-  }
+.loader__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9356dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 9999;
+  animation: fadeOut 3s forwards;
 }
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -205,6 +154,11 @@ meter {
   transition: 0.3s;
 }
 
+.main__btn:hover {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
 .menu__btn {
   width: 186px;
   height: 50px;
@@ -222,6 +176,11 @@ meter {
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.menu__btn:hover {
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 .menu__btn__container {
@@ -310,7 +269,6 @@ meter {
 
 .footer {
   padding: 22px 25px;
-  border: solid;
   background-color: rgb(53, 53, 53);
 }
 .footer svg {
@@ -353,6 +311,11 @@ meter {
   cursor: pointer;
 }
 
+.restaurants__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .menu__body__cards__card:hover {
   cursor: pointer;
 }
@@ -366,16 +329,6 @@ meter {
 .menu__body__cards__card:hover .menu__body__cards__card__selector__tick {
   width: auto;
   height: auto;
-}
-
-.main__btn:hover {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
-}
-
-.menu__btn:hover {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 @keyframes appear {
@@ -398,8 +351,32 @@ meter {
     transform: translateX(0);
   }
 }
+@keyframes showScrollBar {
+  to {
+    overflow: auto;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .main__body {
   background-color: rgb(246, 246, 246);
+  overflow: hidden;
+  animation: showScrollBar 10s forwards;
 }
 
 .explore {
@@ -522,6 +499,7 @@ meter {
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: 0.3s;
 }
 .restaurants__card__anchor {
   width: 100%;
@@ -707,4 +685,102 @@ meter {
   animation: appear 0.5s ease forwards;
   margin-bottom: 20px;
   animation-delay: 3s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .guide__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .guide__cards {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .guide__cards__card {
+    width: 708px;
+  }
+  .restaurants__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0;
+  }
+  .restaurants__card__anchor {
+    width: 708px;
+    margin: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .guide__container {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .guide__title {
+    margin-left: 30px;
+  }
+  .guide__cards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 0 30px 0 30px;
+  }
+  .guide__cards__card {
+    flex: 0 0 31%;
+  }
+  .explore {
+    display: flex;
+    flex-direction: column;
+  }
+  .explore__maintext__container {
+    margin-top: -15px;
+  }
+  .explore > div {
+    transition: 0.3s;
+  }
+  .main__btn__anchor {
+    margin-bottom: -30px;
+  }
+  #restaurants {
+    max-width: 1440px;
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+  }
+  .restaurants__title {
+    margin: 30px 60px 30px 40px !important;
+  }
+  .restaurants__cards {
+    width: 100%;
+    gap: 50px !important;
+  }
+  .restaurants__card__anchor {
+    flex: 0 0 45%;
+    margin: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 46px;
+    height: 144px;
+  }
+  .footer__title {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    padding-bottom: 8px;
+  }
+  .footer__subtitles {
+    display: flex;
+    align-content: end;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -17,6 +17,11 @@
   transition: 0.3s;
 }
 
+.main__btn:hover {
+  background: $btn-color--hvr;
+  box-shadow: 0px 4px 15px 0px #00000059;
+}
+
 .menu__btn {
   width: 186px;
   height: 50px;
@@ -34,6 +39,11 @@
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.menu__btn:hover {
+  background: $btn-color--hvr;
+  box-shadow: 0px 4px 15px 0px #00000059;
 }
 
 .menu__btn__container {

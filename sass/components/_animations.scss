@@ -8,10 +8,10 @@
   cursor: pointer;
 }
 
-// .restaurants__card:hover {
-//   transform: scale(1.02);
-//   // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-// }
+.restaurants__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .menu__body__cards__card:hover {
   cursor: pointer;
@@ -28,16 +28,6 @@
       height: auto;
     }
   }
-}
-
-.main__btn:hover {
-  background: $btn-color--hvr;
-  box-shadow: 0px 4px 15px 0px #00000059;
-}
-
-.menu__btn:hover {
-  background: $btn-color--hvr;
-  box-shadow: 0px 4px 15px 0px #00000059;
 }
 
 @keyframes appear {
@@ -59,5 +49,30 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes showScrollBar {
+  to {
+    overflow: auto;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }

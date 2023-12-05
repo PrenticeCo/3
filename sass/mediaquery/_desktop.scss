@@ -62,4 +62,24 @@
       margin: auto;
     }
   }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 46px;
+    height: 144px;
+
+    &__title {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+      padding-bottom: 8px;
+    }
+
+    &__subtitles {
+      display: flex;
+      align-content: end;
+      gap: 30px;
+    }
+  }
 }

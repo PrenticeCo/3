@@ -1,11 +1,5 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .guide {
-    &__container {
-      //   align-items: center;
-      //   justify-content: center;
-      //   margin: auto;
-    }
-
     &__title {
       display: flex;
       justify-content: center;
@@ -13,10 +7,10 @@
     }
     &__cards {
       margin: auto;
+      margin-bottom: 50px;
 
       &__card {
         width: 708px;
-        margin: auto;
       }
     }
   }
@@ -26,12 +20,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 50px 0 20px 0 !important;
+      margin: 50px 0 20px 0;
     }
 
     &__card__anchor {
-      width: 708px !important;
+      width: 708px;
       margin: auto;
     }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
