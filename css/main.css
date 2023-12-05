@@ -106,10 +106,37 @@ meter {
 /* :where(dialog:modal) {
   all: revert;
 } */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .guide__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .guide__cards {
+    margin: auto;
+  }
+  .guide__cards__card {
+    width: 708px;
+    margin: auto;
+  }
+  .restaurants__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0 !important;
+  }
+  .restaurants__card__anchor {
+    width: 708px !important;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 1025px) {
   .guide__container {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: auto;
+  }
+  .guide__title {
+    margin-left: 30px;
   }
   .guide__cards {
     display: flex;
@@ -117,6 +144,7 @@ meter {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    padding: 0 30px 0 30px;
   }
   .guide__cards__card {
     flex: 0 0 31%;
@@ -135,16 +163,17 @@ meter {
     margin-bottom: -30px;
   }
   #restaurants {
-    max-width: 1240px;
+    max-width: 1440px;
     display: flex;
     flex-flow: wrap;
     margin: auto;
   }
   .restaurants__title {
-    margin: 30px 60px 30px 20px !important;
+    margin: 30px 60px 30px 40px !important;
   }
   .restaurants__cards {
     width: 100%;
+    gap: 50px !important;
   }
   .restaurants__card__anchor {
     flex: 0 0 45%;
@@ -376,7 +405,7 @@ meter {
 .explore {
   display: flex;
   flex-direction: column;
-  padding: 39px 26px 57px 34px;
+  padding: 39px 26px 57px 26px;
   gap: 30px;
   transition: 0.5s;
 }
@@ -425,6 +454,7 @@ meter {
   margin-bottom: 50px;
 }
 .guide__cards__card {
+  max-width: 768px;
   padding-right: 24px;
   height: 72.38px;
   margin-bottom: 25px;

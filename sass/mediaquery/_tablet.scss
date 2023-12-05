@@ -1,3 +1,37 @@
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .guide {
+    &__container {
+      //   align-items: center;
+      //   justify-content: center;
+      //   margin: auto;
+    }
 
-// }
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__cards {
+      margin: auto;
+
+      &__card {
+        width: 708px;
+        margin: auto;
+      }
+    }
+  }
+
+  .restaurants {
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0 20px 0 !important;
+    }
+
+    &__card__anchor {
+      width: 708px !important;
+      margin: auto;
+    }
+  }
+}

@@ -1,15 +1,21 @@
 @media screen and (min-width: 1025px) {
   .guide {
     &__container {
-      max-width: 1240px;
+      max-width: 1440px;
       margin: auto;
     }
+
+    &__title {
+      margin-left: 30px;
+    }
+
     &__cards {
       display: flex;
       flex-flow: wrap;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 50px;
+      padding: 0 30px 0 30px;
 
       &__card {
         flex: 0 0 31%;
@@ -35,7 +41,7 @@
   }
 
   #restaurants {
-    max-width: 1240px;
+    max-width: 1440px;
     display: flex;
     flex-flow: wrap;
     margin: auto;
@@ -43,11 +49,12 @@
 
   .restaurants {
     &__title {
-      margin: 30px 60px 30px 20px !important;
+      margin: 30px 60px 30px 40px !important;
     }
 
     &__cards {
       width: 100%;
+      gap: 50px !important;
     }
 
     &__card__anchor {

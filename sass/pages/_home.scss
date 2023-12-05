@@ -6,7 +6,7 @@
 .explore {
   display: flex;
   flex-direction: column;
-  padding: 39px 26px 57px 34px;
+  padding: 39px 26px 57px 26px;
   gap: 30px;
   transition: 0.5s;
 
@@ -59,6 +59,7 @@
   margin-bottom: 50px;
 
   &__card {
+    max-width: 768px;
     padding-right: 24px;
     height: 72.38px;
     margin-bottom: 25px;
