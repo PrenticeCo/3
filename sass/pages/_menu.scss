@@ -1,14 +1,17 @@
 .menu__background__img {
-  //   height: 275px;
+  height: 275px;
   width: 100%;
-  object-fit: cover;
   position: relative;
   z-index: 0;
+
+  > img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .menu__body {
   background-color: $background-color;
-  //   height: 1020px;
   border-radius: 40px 40px 0 0;
   padding: 0 13px;
   margin-top: -48px;
@@ -42,6 +45,8 @@
   }
 
   &__cards {
+    max-width: 634px;
+    margin: auto;
     > :last-child {
       margin-bottom: 40px;
     }
@@ -51,6 +56,7 @@
       margin-top: 10.5px;
       background-color: white;
       display: flex;
+      max-width: 634px;
 
       &__title {
         font-size: 18px;
@@ -102,7 +108,8 @@
           letter-spacing: 0em;
           text-align: center;
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
+          padding-right: 13.5px;
           flex-grow: 1;
         }
       }

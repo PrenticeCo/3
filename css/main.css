@@ -299,6 +299,7 @@ meter {
 }
 .footer__subtitles__text:hover {
   color: gainsboro;
+  cursor: pointer;
 }
 
 .restaurants__heart--hover:hover {
@@ -572,11 +573,15 @@ meter {
 }
 
 .menu__background__img {
+  height: 275px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.menu__background__img > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  z-index: 0;
 }
 
 .menu__body {
@@ -610,6 +615,10 @@ meter {
   border-bottom: 3px solid #99e2d0;
   width: 40px;
 }
+.menu__body__cards {
+  max-width: 634px;
+  margin: auto;
+}
 .menu__body__cards > :last-child {
   margin-bottom: 40px;
 }
@@ -618,6 +627,7 @@ meter {
   margin-top: 10.5px;
   background-color: white;
   display: flex;
+  max-width: 634px;
 }
 .menu__body__cards__card__title {
   font-size: 18px;
@@ -661,7 +671,8 @@ meter {
   letter-spacing: 0em;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 13.5px;
   flex-grow: 1;
 }
 
@@ -794,5 +805,30 @@ meter {
     display: flex;
     align-content: end;
     gap: 30px;
+  }
+  .menu__body {
+    background-color: rgb(246, 246, 246);
+    border-radius: 40px 40px 0 0;
+    padding: 0 13px;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: -48px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .menu__body__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__background__img {
+    height: 383px;
+    width: 100%;
+  }
+  .menu__background__img > img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */
