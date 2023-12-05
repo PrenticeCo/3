@@ -141,12 +141,12 @@ meter {
     margin: auto;
   }
   .restaurants__title {
-    margin: 30px 60px 30px 25px !important;
+    margin: 30px 60px 30px 20px !important;
   }
   .restaurants__cards {
     width: 100%;
   }
-  .restaurants__card {
+  .restaurants__card__anchor {
     flex: 0 0 45%;
     margin: auto;
   }
@@ -492,8 +492,9 @@ meter {
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: transform 0.3s;
-  transition: 0.3s;
+}
+.restaurants__card__anchor {
+  width: 100%;
 }
 .restaurants__card__content {
   padding: 16px 60px 0 13px;
@@ -522,6 +523,11 @@ meter {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.kitchen_west__link {
+  width: auto;
+  height: auto;
 }
 
 .restaurants__card__new__container {
