@@ -739,6 +739,11 @@ meter {
     align-content: end;
     gap: 30px;
   }
+  .menu__body__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1025px) {
   .guide__container {
