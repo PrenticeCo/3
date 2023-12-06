@@ -107,7 +107,7 @@ meter {
   all: revert;
 } */
 .loader {
-  border: 16px solid #ff79da;
+  border: 16px solid #99e2d0;
   border-top: 16px solid #9356dc;
   border-radius: 50%;
   width: 120px;
@@ -120,7 +120,7 @@ meter {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9356dc;
+  background-color: rgb(246, 246, 246);
   display: flex;
   align-items: center;
   justify-content: center;
