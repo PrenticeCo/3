@@ -1,4 +1,5 @@
-View website here: https://prenticeco.github.io
+View website here:
+https://prenticeco.github.io
 
 github url:
 https://github.com/PrenticeCo/PrenticeCo
