@@ -72,10 +72,6 @@
         background-color: $tertiary-color;
         height: auto;
         border-radius: 0 15px 15px 0;
-        // transition: width 0.5s ease;
-        // align-items: center;
-        // justify-content: center;
-
         &__tick {
           width: 0;
           height: 0;
@@ -122,6 +118,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: appear 0.5s ease forwards;
+    overflow: hidden;
     margin-bottom: 20px;
     animation-delay: 1s;
   }
@@ -130,6 +127,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: appear 0.5s ease forwards;
+    overflow: hidden;
     margin-bottom: 20px;
     animation-delay: 2s;
   }
@@ -138,6 +136,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: appear 0.5s ease forwards;
+    overflow: hidden;
     margin-bottom: 20px;
     animation-delay: 3s;
   }
