@@ -312,6 +312,17 @@ meter {
   cursor: pointer;
 }
 
+.menu__body__heart:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu__body__heart--hover:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .restaurants__card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -604,6 +615,26 @@ meter {
   text-align: left;
   margin: 34px 17px 40px 4px;
 }
+.menu__body__title__wrapper {
+  display: flex;
+  position: relative;
+  width: 634px;
+  margin: auto;
+}
+.menu__body__heart {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.menu__body__heart--hover {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
 .menu__body__subtitle {
   font-size: 16px;
   font-weight: 300;
@@ -680,6 +711,7 @@ meter {
   opacity: 0;
   transform: translateY(20px);
   animation: appear 0.5s ease forwards;
+  overflow: hidden;
   margin-bottom: 20px;
   animation-delay: 1s;
 }
@@ -687,6 +719,7 @@ meter {
   opacity: 0;
   transform: translateY(20px);
   animation: appear 0.5s ease forwards;
+  overflow: hidden;
   margin-bottom: 20px;
   animation-delay: 2s;
 }
@@ -694,6 +727,7 @@ meter {
   opacity: 0;
   transform: translateY(20px);
   animation: appear 0.5s ease forwards;
+  overflow: hidden;
   margin-bottom: 20px;
   animation-delay: 3s;
 }
